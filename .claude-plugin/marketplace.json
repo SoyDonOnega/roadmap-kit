@@ -1,0 +1,6 @@
+{
+  "name": "roadmap-kit",
+  "owner": { "name": "SoyDonOnega" },
+  "description": "Keep a Markdown roadmap beside Claude Code and close each session into it",
+  "plugins": [{ "name": "roadmap-kit", "source": "./" }]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "roadmap-kit",
+  "version": "0.1.0",
+  "description": "A Roadmap.md pane beside the chat and a /close-session command that files what a session leaves into that roadmap and into memory",
+  "author": {
+    "name": "SoyDonOnega"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "roadmapPath": {
+      "type": "string",
+      "title": "Roadmap file",
+      "description": "Full path of your Roadmap.md, in any folder (Google Drive, OneDrive, Dropbox, iCloud or local). ~ is your home folder.",
+      "required": true
+    }
+  }
+}
