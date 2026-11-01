@@ -8,10 +8,10 @@ Close this session. Work only from this conversation and read-only checks; write
 
 ## 1. Find the two stores
 
-**Roadmap.** Run `claude plugin configure roadmap-kit --json` and take `roadmapPath` (a leading `~` is the home folder).
+**Roadmap.** Run `claude plugin list --json` and take the `id` that starts with `roadmap-kit@` (usually `roadmap-kit@roadmap-kit`). Run `claude plugin configure <id> --json` and take `inputs.roadmapPath` (a leading `~` is the home folder).
 
 - Set and the file exists: use it.
-- Unset, or no file there: ask where the person keeps their roadmap, or wants it. Suggest a synced folder so it is on every device, Google Drive first, but take any place they name (OneDrive, Dropbox, iCloud, a local folder). With their OK, create the file there from the base format below, and save the path with `printf '{"roadmapPath":"<path>"}' | claude plugin configure roadmap-kit --values-stdin`.
+- Unset, or no file there: ask where the person keeps their roadmap, or wants it. Suggest a synced folder so it is on every device, Google Drive first, but take any place they name (OneDrive, Dropbox, iCloud, a local folder). With their OK, create the file there from the base format below, and save the path with `printf '{"roadmapPath":"<path>"}' | claude plugin configure <id> --values-stdin`. Tell them the pane uses the new path after a restart.
 
 **Memory.** Claude's own memory always: the memory directory this session uses (with its `MEMORY.md` index) when there is one, and the `CLAUDE.md` files in play.
 

@@ -54,7 +54,7 @@ const refresh = async ($: EngineInterface, force = false) => {
   } catch {
     const error = configured
       ? `Cannot read ${configured}. Check the path, and that its sync app is running.`
-      : 'No roadmap file set: give the roadmap-kit option roadmapPath (claude plugin configure roadmap-kit).'
+      : 'No roadmap file set: give the roadmap-kit option roadmapPath (claude plugin configure roadmap-kit@roadmap-kit).'
     const failed: Roadmap = { sections: [], mtimeMs: 0, error }
     await update($, roadmap, () => failed)
   }

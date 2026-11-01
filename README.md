@@ -9,10 +9,12 @@ The roadmap is a normal Markdown file. Keep it where you want: Google Drive, One
 
 ## Install
 
-From a shell:
+The plugin has one option, **Roadmap file** (`roadmapPath`): the full path of your `Roadmap.md`. `~` is your home folder.
+
+From a shell, give the path with the install:
 
 ```
-claude plugin install roadmap-kit --marketplace SoyDonOnega/roadmap-kit
+claude plugin install roadmap-kit --marketplace SoyDonOnega/roadmap-kit --config roadmapPath=~/path/to/Roadmap.md
 ```
 
 At the prompt of a terminal session:
@@ -23,10 +25,10 @@ At the prompt of a terminal session:
 
 In the desktop app: click + next to the prompt box, then Plugins. Add the marketplace `SoyDonOnega/roadmap-kit`, then add the plugin.
 
-The install asks for one option, **Roadmap file** (`roadmapPath`): the full path of your `Roadmap.md`. `~` is your home folder. To change it later:
+To set or change the path later, then restart Claude Code:
 
 ```
-claude plugin configure roadmap-kit
+claude plugin configure roadmap-kit@roadmap-kit
 ```
 
 No file yet? Copy [`examples/Roadmap.md`](examples/Roadmap.md) to the place you want. Or run `/close-session` once: it asks where to keep the roadmap and creates the file.

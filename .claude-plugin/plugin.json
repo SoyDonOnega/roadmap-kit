@@ -1,6 +1,6 @@
 {
   "name": "roadmap-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Roadmap.md pane beside the chat and a /close-session command that files what a session leaves into that roadmap and into memory",
   "author": {
     "name": "SoyDonOnega"
